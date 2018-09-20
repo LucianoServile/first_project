@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buscar Revendedora</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/imagenR.ico" />
+	<link rel="stylesheet" type="text/css" href="css/solicitar_revendedora.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+  <link rel="stylesheet" type="text/css" href="css/prueba_menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/sidenav.js"></script>
+</head>
+<body>
+
+ <!-- Titulo-->
+<!-- <div class="position-fixed" style="width: 100%"> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8904B1;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#titulo" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <div class="navbar-brand abs-center-x">
+          <a class="navbar-brand" href="r3.html">Vestirte</a>  
+        </div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="titulo">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="solicita_revendedora.html">Solicita Revendedora</a>
+      </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="convertite_en_revendedora.html">Convertite en Revendedora<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav abs-center-x">
+        <li class="nav-item">
+          <a class="navbar-brand d-none d-lg-block" href="r3.html">Vestirte</a>      
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!-- Ingreso a revendedora -->
+          <!-- Button to open the modal login form -->
+      <a class="nav-link " href="#" onclick="document.getElementById('id01').style.display='block'">Ingreso a revendedora</a>
+
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content1" action="/action_page.php">
+          <div class="container">
+            <div class="row">
+              <h3>Ingresá a tu Espacio Vestirte</h3>
+              <p class="d-none d-lg-block">Si sos Revendedora Independiente, ingresá tu número de cuenta y contraseña. Si aún no sos Revendedora Independiente, hacé click acá para postularte.</p>
+              <br class="d-none d-lg-block">
+              <p class="d-none d-lg-block">Si sos Revendedora Independiente y no te registraste, hacé click acá para hacerlo.</p>
+              <input type="text" placeholder="Numero de cuenta" name="uname" required>
+              <br>
+                <input type="password" placeholder="Contraseña" name="psw" required>
+                <br>
+              <button type="submit">Ingresar</button>
+            </div>
+          </div>
+
+          <div class="container2">
+            <div class="row">
+              <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="row">
+              <hr>
+              <p class="d-none d-lg-block">Si estás dentro de las zonas habilitadas y sos Revendedora Independiente ON, iniciá sesión con tu usuario de Facebook</p>
+              <button>Ingresar con facebook</button>
+              <hr class="d-none d-lg-block">
+              <p class="d-none d-lg-block">Si querés ser Revendedora Independiente Vestirte, hacé click <a href="#">acá</a>.</p>
+            </div>
+          </div>
+        </form>
+        <script src="js/loginRevendedora.js"></script>
+      </div>
+
+        </li>
+        <li class="nav-item">
+          
+    <!-- Ingreso cliente -->
+          <!-- Button to open the modal login form -->
+      <a class="nav-link" href="#" onclick="document.getElementById('id02').style.display='block'">Ingreso cliente</a>
+
+      <!-- The Modal -->
+      <div id="id02" class="modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content2" action="/action_page.php">
+          <div class="container">
+            <h3>Ingreso Cliente</h3>
+            <p>¡Registrate <a href="#">acá</a>!</p>
+            <hr>
+            <input type="text" placeholder="Email" name="uname" required>
+            <br>
+              <input type="password" placeholder="Contraseña" name="psw" required>
+              <br>
+            <button type="submit">Ingresar</button>
+            <br>
+            <div class="container2">
+                <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+            </div>
+            <br class="d-none d-lg-block">
+            <hr class="d-none d-lg-block">
+            <button id="btn_facebook">Ingresar con facebook</button>
+          </div>
+        </form>
+      </div>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Menu -->
+<div class="d-none d-lg-block">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      <!-- sidenav  start-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()" style="cursor: pointer;">&#9776 Menu</span>
+
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+      </div>
+
+      <!-- sidenav end -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categoría
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Maquillage</a>
+            <a class="dropdown-item" href="#">Fragancia</a>
+            <a class="dropdown-item" href="#">Shampoo</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="como_comprar.html">Como comprar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="folletos.html">Folleto</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="usuario.html">Usuarios frecuentes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+ <!-- </div> --> 
+
+<!-- context -->
+
+	<div class="container0">
+    <div class="fila1">
+      <div class="col-12">
+          <h3>Encontrar Revendedora Independiente de Productos Vestirte</h3>
+          <hr>
+      </div> 
+    </div>   
+    <div class="fila2">
+      <div class="row">
+          <div class="column d-none d-lg-block d-print-block"><img src="img/imagen1.jpg"></div>
+          <div class="column">
+            <div class="cuadro1">
+              <button type="button" class="btn btn-primary btn-xs btn-block">Facebook</button>
+              <button type="button" class="btn btn-primary btn-xs btn-block">Facebook</button>
+              <button type="button" class="btn btn-primary btn-xs btn-block">Facebook</button>
+            </div>
+            <br>
+            <div class="cuadro2">
+              <h5>Por qué conectarte con una Revendedora Independiente Vestirte</h5>
+              <ul>
+                <div>
+                  <li>
+                    <img src="img/img1.jpg" alt="Avatar" style="border-radius: 50%; width: 50px; height: 50px; float: left"> 
+                    <p>Obtené descuentos</p>
+                    <p>Comprando con una Revendedora Independiente Vestirte</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="img/img1.jpg" alt="Avatar" style="border-radius: 50%; width: 50px; height: 50px; float: left"> 
+                    <p>Obtené descuentos</p>
+                    <p>Comprando con una Revendedora Independiente Vestirte</p>
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <img src="img/img1.jpg" alt="Avatar" style="border-radius: 50%; width: 50px; height: 50px; float: left"> 
+                    <p>Obtené descuentos</p>
+                    <p>Comprando con una Revendedora Independiente Vestirte</p>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+.container0{
+	background-color: grey;
+	width: 100%;
+	padding: 30px;
+}
+
+.container0 .fila1{
+	margin: auto;
+	width: 60%;
+}
+
+.container0 .fila2{
+	margin: auto;
+	width: 60%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row img{
+	width: 75%;
+	height: 661px;
+}
+
+.cuadro1{
+	background-color: white;
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+}
+
+.cuadro1 button{
+	margin: auto;
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.cuadro2{
+	background-color: white;
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	margin-top: 
+}
+
+.cuadro2 div{
+	padding: 5px;
+	display: inline-block;
+}
+
+.cuadro2 li{
+	list-style: none;
+}
+
+.cuadro2 li p{
+	font-size: 12px;
+	overflow: auto;
+	padding-left: 10px;
+}
+
+.cuadro2 img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/************************************************************************************************/
+
+@media (max-width: 1200px){
+.container0{
+	width: 100%;
+}
+
+.container0 .fila1{
+	margin: auto;
+	width: 100%;
+}
+
+.fila1 h3{
+	font-size: 20px;
+	text-align: center;
+}
+
+.container0 .fila2{
+	margin: auto;
+	width: 100%;
+}
+
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cuadro1{
+	width: 100%;
+}
+
+.cuadro1 button{
+	margin: auto;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.cuadro2{
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+.cuadro2 h5{
+	font-size: 15px;
+	text-align: center;
+}
+
+.cuadro2 div{
+	display: block;
+}
+
+.cuadro2 li{
+	list-style: none;
+}
+
+.cuadro2 li p{
+	font-size: 12px;
+	text-align: center;
+}
+
+.cuadro2 img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+}

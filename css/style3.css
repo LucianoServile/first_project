@@ -20,6 +20,10 @@ body{
     transform: translateX(-50%);
 }
 
+.navbar-toggler{
+  border: none;
+}
+
 .form {
 	color:white;
 }
@@ -221,138 +225,71 @@ body{
 }
 
 /*----------------------------------Imagenes y videos-------------------------------------------- */
-@media (max-width: 1200px){
-
-  .context{
-    width: 100%;
-    margin: auto;
-  }
-
-  .context .text-center1{
-    width: 90%;
-    margin: auto;
-  }
-
-  .context .text-center1 img{
-    width: 100%;
-    height: 320px;
-  }
-
-  .context .text-center2{
-    width: 90%;
-    margin: auto;
-  }
-
-  .context .text-center2 iframe{
-    width: 100%;
-    height: 320px;
-
-  }
+@media (min-width: 1200px){
+.imagenes{
+  margin: auto;
+  width: 100%;
 }
 
-/*----------------------------------Cuadro -------------------------------------------- */
-.row1{
-  background-color: #F2F2F2;
-  padding: 50px;
-}
-
-.row1 p{
+.imagenes .row{
   margin: auto;
   width: 70%;
 }
 
-.row2{
-  background-color: #D8D8D8;
-  padding: 20px;
-  width: 70%;
-  margin: auto;
-}
-
-.row2 h3{
-  color: white;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10px;
   text-align: center;
+  font-family: arial;
+  padding: 5px;
 }
 
-.row2 #registrate{
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
   color: white;
+  background-color: #4C0B5F;
   text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+}
+
+/*---------------------------------Mas vendidos-------------------------------------------- */
+.vendidos{
   margin: auto;
-  width: 50%;
+  width: 90%;
 }
 
-.row2 .col-auto{
-  margin: auto;
-  width: 50%;
-  font-size: 12px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.vendidos .column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
 }
 
-
-.row2 #parrafo{
-  color: white;
-  font-size: 10px;
-  margin: auto;
-  width: 50%;
+.vendidos .column img{
+  height: 550px;
 }
 
-.row3 .form-inline button{
-  margin-top: 20px;
-  width: 250px;
-  background-color: #8904B1;
+.vendidos .row:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-@media (max-width: 1200px){
-  
-  .row1{
-    width: 100%;
-    background-color: #F2F2F2;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .row1 p{
-    margin-left: 10px;
-  }
-
-  .row2{
-    background-color: #D8D8D8;
-    width: 100%;
-    margin: auto;
-  }
-
-  .row2 #registrate {
-    font-size: 12px;
-    text-align: left;
-    width: 100%;
-  }
-
-  .row3 .form-inline{
-    width: 100%;
-  }
-
-  .row3 .form-inline input{
-    width: 250px;
-  }
-
-  .row3 button{
-    width: 100%;
-    background-color: #8904B1;
-  }
-
-  .row4 #parrafo {
-    width: 100%;
-  }
-
-  .row5{
-    width: 100%; 
-  }
-
-  .row5 .col-auto{
-    width: 100%;
-  }
-
-}
 
 /*----------------------------------Lista -------------------------------------------- */
 
@@ -389,3 +326,154 @@ body{
     margin-top: 20px;
 }
 
+
+/************************************320x568****************************************************************/
+/*----------------------------------Imagenes y videos-------------------------------------------- */
+@media (min-width: 320px){
+.imagenes{
+  margin: auto;
+  width: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  padding: 5px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #4C0B5F;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/*---------------------------------------Vendidos-----------------------------------------------------------*/
+.vendidos .column img{
+  height: 150px;
+}
+
+/*------------------------------------------------- Ingreso ---------------------------------------------------*/
+#id01 {
+  width: 100%;
+  height: 100%;
+}
+
+#id01 .modal-content1{
+  height: 90%;
+  width: 90%;
+}
+
+#id01 .modal-content1 h3{
+  font-size: 15px;
+  margin: auto;
+  width: 50%;
+}
+
+#id01 .modal-content1 input{
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+
+#id01 .modal-content1 button{
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+
+#id01 .modal-content1 .container2{
+  margin: auto;
+  width: 50%;
+}
+
+#id01 .modal-content1 .container3{
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+
+#id02 .modal-content2{
+  height: 90%;
+  width: 90%;
+}
+
+#id02 .modal-content2 input{
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+
+#id02 .modal-content2 button{
+  margin: auto;
+  width: 90%;
+  margin-top: 10px;
+}
+
+}
+
+/************************************Medium table****************************************************************/
+/*----------------------------------Imagenes y videos-------------------------------------------- */
+@media (min-width: 992px){
+.imagenes{
+  margin: auto;
+  width: 100%;
+}
+
+.imagenes .row .column{
+  margin: auto;
+  padding: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  padding: 5px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #4C0B5F;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.vendidos .row .column a img{
+  height: 450px;
+}
+
+}
