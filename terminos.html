@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terminos y Condiciones</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/vestirte.ico" />
+	<link rel="stylesheet" type="text/css" href="css/terminos.css">
+  	<link rel="stylesheet" type="text/css" href="css/prueba_menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 	<script src="js/sidenav.js"></script>
+  	<script src="js/search.js"></script>
+</head>
+<body>
+
+ <!-- Titulo-->
+<!-- <div class="position-fixed" style="width: 100%"> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8904B1;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#titulo" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <div class="navbar-brand abs-center-x">
+          <a class="navbar-brand" href="r3.html"><img src="img/logo.png" width="auto" height="30"></a>  
+        </div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="titulo">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="solicita_revendedora.html">Solicita Revendedora</a>
+      </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="convertite_en_revendedora.html">Convertite en Revendedora<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav abs-center-x">
+        <li class="nav-item">
+          <a class="navbar-brand d-none d-lg-block" href="r3.html"><img src="img/logo.png" width="auto" height="50"></a>      
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!-- Ingreso a revendedora -->
+          <!-- Button to open the modal login form -->
+      <a class="nav-link " href="#" onclick="document.getElementById('id01').style.display='block'">Ingreso a revendedora</a>
+
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content1" action="/action_page.php">
+          <div class="container">
+            <div class="row">
+              <h3>Ingresá a tu Espacio Vestirte</h3>
+              <p class="d-none d-lg-block">Si sos Revendedora Independiente, ingresá tu número de cuenta y contraseña. Si aún no sos Revendedora Independiente, hacé click acá para postularte.</p>
+              <br class="d-none d-lg-block">
+              <p class="d-none d-lg-block">Si sos Revendedora Independiente y no te registraste, <a href="convertite_en_revendedora.html">hacé click acá</a> para hacerlo.</p>
+              <input type="text" placeholder="Numero de cuenta" name="uname" required>
+              <br>
+                <input type="password" placeholder="Contraseña" name="psw" required>
+                <br>
+              <button type="submit">Ingresar</button>
+            </div>
+          </div>
+
+          <div class="container2">
+            <div class="row">
+              <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="row">
+              <hr>
+              <p class="d-none d-lg-block">Si estás dentro de las zonas habilitadas y sos Revendedora Independiente ON, iniciá sesión con tu usuario de Facebook</p>
+              <button id="btn_facebook">Ingresar con facebook</button>
+              <hr class="d-none d-lg-block">
+              <p class="d-none d-lg-block">Si querés ser Revendedora Independiente Vestirte, hacé click <a href="#">acá</a>.</p>
+            </div>
+          </div>
+        </form>
+        <script src="js/loginRevendedora.js"></script>
+      </div>
+
+        </li>
+        <li class="nav-item">
+          
+    <!-- Ingreso cliente -->
+          <!-- Button to open the modal login form -->
+      <a class="nav-link" href="#" onclick="document.getElementById('id02').style.display='block'">Ingreso cliente</a>
+
+      <!-- The Modal -->
+      <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" 
+      class="close" title="Close Modal2">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content2" action="/action_page.php">
+          <div class="container">
+            <h3>Ingreso Cliente</h3>
+            <p>¡Registrate <a href="registrarte.html">acá</a>!</p>
+            <hr>
+            <input type="text" placeholder="Email" name="uname" required>
+            <br>
+              <input type="password" placeholder="Contraseña" name="psw" required>
+              <br>
+            <button type="submit">Ingresar</button>
+            <br>
+            <div class="container2">
+                <span class="psw"><a href="#">¿Olvidaste tu contraseña?</a></span>
+            </div>
+            <br class="d-none d-lg-block">
+            <hr class="d-none d-lg-block">
+            <button id="btn_facebook">Ingresar con facebook</button>
+          </div>
+        </form>
+        
+      </div>
+
+        </li>
+         <li>
+          <a href="#"><img src="img/carro.png" width="35" height="35" class="d-none d-sm-block"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Menu -->
+
+
+ <div class="d-none d-lg-block">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      <!-- sidenav  start-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="r3.html">Inicio</a>
+        <a href="categoria.html">Categoria</a>
+        <a href="terminos.html">Terminos</a>
+      </div>
+
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()" style="cursor: pointer;">&#9776 Menu</span>
+
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+      </div> 
+
+
+
+      <!-- sidenav end -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categoría
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="categoria.html">Mujeres</a>
+            <a class="dropdown-item" href="categoria_hombre.html">Hombres</a>
+            <a class="dropdown-item" href="categoria_kid.html">Kid</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="como_comprar.html">Como comprar</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="folletos.html">Folleto</a>
+        </li> -->
+        <li class="nav-item">
+           <a class="nav-link" href="usuario.html">Usuarios frecuentes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="menu-pequeño d-block d-sm-none">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="categoria.html">Categoria</a>
+              <a class="dropdown-item" href="como_comprar.html">Como comprar</a>
+              <a class="dropdown-item" href="usuario.html">Usuario Frecuentes</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+  </div>
+
+ <!-- </div> --> 
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<div class="terminos">
+	<div class="row">
+		<div class="col-12">
+			<h4>Terminos y Condiciones</h4>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-9">
+			<p><strong>1. Introducción.</strong><p>
+		</div>
+		<div class="col-12">
+			<p>Muchas gracias por ingresar a los términos y condiciones (los “Términos y Condiciones”) del sitio web www.Vestirte.com.ar (el “Sitio”) de Cosméticos Vestirte S.A.C.I. (Vestirte). El acceso a y cualquier uso del Sitio se encuentra sujeto a estos Términos y Condiciones. Al acceder y/o registrarse en el Sitio, Usted acepta sin limitación o condición alguna estos Términos y Condiciones. Informamos que ciertos servicios u ofertas disponibles en el Sitio podrán tener términos y condiciones adicionales aplicables, los cuales serán informados y referenciados a Usted. 
+			Si usted no está de acuerdo con estos Términos y Condiciones, Usted no puede registrarse en, acceder o utilizar el Sitio y usted no puede hacer clic en ACEPTAR estos Términos y Condiciones. Además, al registrarse en, acceder y/o utilizar el Sitio, y/o hacer click en ACEPTAR estos Términos y Condiciones, usted afirma que tiene la edad legal mínima para aceptar los mismos, o, si no es así, que ha obtenido de sus padres y/o tutores consentimiento para tal fin. Si usted no tiene la edad legal mínima para aceptar estos Términos y Condiciones y/o no ha obtenido el consentimiento parental o del tutor legal para tal fin, entonces usted no puede registrarse en, acceder o utilizar el Sitio y usted no puede hacer clic en ACEPTAR estos Términos y Condiciones.
+			Vestirte se reserva el derecho de modificar estos Términos y Condiciones, en su totalidad o en parte, las veces que considere necesarias a su exclusivo criterio, ya sea por razones de seguridad, legales o reglamentarias, o para satisfacer cambios en nuestras necesidades de negocio o la evolución del mercado. Vestirte notificará dicho/s cambio/s por cualquier medio razonable, incluyendo, sin limitaciones, la puesta a disposición de la versión revisada de estos Términos y Condiciones a través del Sitio. Usted puede determinar la última vez que Vestirte ha revisado estos Términos y Condiciones, refiriéndose a la leyenda "última actualización" obrante en la parte superior de estos Términos y Condiciones. Su acceso o uso posterior del Sitio constituirá su aceptación de tales cambios. No obstante lo anterior, los eventuales cambios a estos Términos y Condiciones no serán de aplicación retroactiva a cualquier disputa entre usted y Vestirte anteriores a la fecha en que Vestirte publicó la versión revisada de estos Términos y Condiciones que incorpora esos cambios o le notificó de tales cambios. Si usted no está de acuerdo con los cambios realizados o a realizarse en los Términos y Condiciones, no podrá acceder ni utilizar el Sitio. Podemos, en cualquier momento, modificar o interrumpir la totalidad o parte del Sitio, modificar o renunciar a las tarifas necesarias para utilizar el Sitio, u ofrecer oportunidades a algunos o a todos los usuarios del Sitio en cuanto a seguridad, cuestiones legales o reglamentarias o para satisfacer cambios en nuestras necesidades de negocio o la evolución del mercado, sin perjuicio de las restricciones impuestas a nuestro ejercicio de tales derechos en virtud de la legislación aplicable. 
+			Si usted es una Revendedora Independiente o Revendedora Independiente Infinity de productos Vestirte, usted reconoce y acepta que el uso del Sitio está sujeta no sólo a estos Términos y Condiciones, sino también a los términos y condiciones contenidos en la ficha de apertura de cuenta corriente comercial y aceptación de términos y condiciones de apertura de cuenta como Revendedora Independiente Infinity y cualquier política Vestirte, códigos de conducta u otras guías relacionadas.<p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-9">
+			<p><strong>2. Definiciones</strong><p>
+		</div>
+		<div class="col-12">
+			<p>A efectos de estos Términos y Condiciones, los términos seguidamente expuestos tienen los siguientes significados:
+			- "Revendedora Independiente" es una persona humana que adquiere por su propia cuenta y riesgo productos comercializados por Vestirte para uso propio o posterior venta a sus clientes. 
+
+			- - "Revendedora Independiente Online" es una persona humana que adquiere de manera digital por su propia cuenta y riesgo productos comercializados por Vestirte para uso propio o posterior venta a sus clientes.<p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-9">
+			<p><strong>3. Contenido Publicado por Revendedoras independientes de productos Vestirte.</strong><p>
+		</div>
+		<div class="col-12">
+			<p>Las Revendedoras Independientes y Revendedora Independiente Online de productos Vestirte son terceras personas ajenas e independientes de Vestirte; no están afiliadas a Vestirte ni a cualquiera de las sociedades matrices de Vestirte, sus subsidiarias o filiales (colectivamente "afiliados"). Por el contrario, desarrollan su negocio de manera independiente mediante la compra y venta posterior de Productos Vestirte; revenden los productos a su nombre (no lo hace por cuenta y orden de Vestirte), asumiendo íntegramente el riesgo empresario de su actividad de reventa de los Productos Vestirte (es decir, toman a su cargo la insolvencia de sus clientes). Se encuentran unidas a Vestirte por un contrato de cuenta corriente comercial, bajo ninguna exigencia de continuidad, de limitación territorial, ni de exclusividad. Vestirte ni ningún afiliado tiene control ni es responsable por ningún tipo de texto, imágenes, u otra información o materiales que las Revendedoras Independientes de productos Vestirte compartan a través de los sitios en línea personales que las Revendedoras Independientes pudieran crear y que se encuentren vinculados con el Sitio o con Vestirte. Además, usted reconoce y acepta que ni Vestirte ni ninguno de sus afiliados tiene control sobre, o es responsable de, los sitios en línea personalizados de las Revendedoras Independientes de Productos Vestirte, que la aplicación puede vincular o interactuar. Dicha información, materiales y sitios personalizados en línea se denominarán en lo sucesivo "Contenido de Revendedoras independientes de productos Vestirte".
+			Ni Vestirte ni ningún afiliado (a) ha tomado ninguna medida para confirmar la exactitud o confiabilidad de cualquier Contenido de Revendedoras Independientes de productos Vestirte u otros materiales comunicados a usted por Revendedoras Independientes de productos Vestirte, ni (b) hace ninguna declaración u otorga garantía en cuanto a la seguridad de las comunicaciones entre usted y cualquier Revendedora Independiente de productos Vestirte realizadas utilizando Contenido de Revendedoras independientes de productos Vestirte (por ejemplo, enlaces de correo electrónico puestos a disposición por Revendedoras Independientes de productos Vestirte). Además, ni Vestirte ni ningún afiliado hace ninguna declaración u otorga garantía en cuanto a la privacidad o las prácticas de protección de datos de cualquier Revendedora Independiente de productos Vestirte.<p>
+		</div>
+	</div>
+</div>
+
+<!-- bottom -->
+  <div class="bottom">
+      <p>2018 Vestirte</p>
+      <br>
+      <a href="terminos.html">Declaración de privacidad | Términos y Condiciones de uso del sitio.</a>
+  </div>
+
+</body>
+</html>

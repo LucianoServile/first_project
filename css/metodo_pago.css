@@ -1,0 +1,42 @@
+body{
+	margin: 0px;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+.content{
+	margin: auto;
+	width: 50%;
+	border: 1px solid purple;
+	padding: 30px;
+}
+
+.content button{
+	border: none;
+	background-color: purple;
+	padding: 10px;
+}
+
+/*Bottom*/
+.bottom {
+	text-align: center;
+  background-color: #E6E6E6;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.bottom a{
+	text-decoration: none;
+	color: grey;
+}
+
+
+@media (max-width: 1200px){
+	.content{
+		margin: auto;
+		width: 100%;
+		border: 1px solid purple;
+		padding: 30px;
+	}
+}

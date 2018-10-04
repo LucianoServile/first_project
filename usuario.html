@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Usuario Frecuente</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/imagenR.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/vestirte.ico" />
 	<link rel="stylesheet" type="text/css" href="css/usuario.css">
 	<link rel="stylesheet" type="text/css" href="css/prueba_menu.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,14 +14,14 @@
 </head>
 <body>
 
- <!-- Titulo-->
+   <!-- Titulo-->
 <!-- <div class="position-fixed" style="width: 100%"> -->
 
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8904B1;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#titulo" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">
         <div class="navbar-brand abs-center-x">
-          <a class="navbar-brand" href="r3.html">Vestirte</a>  
+          <a class="navbar-brand" href="r3.html"><img src="img/logo.png" width="auto" height="30"></a>  
         </div>
       </span>
     </button>
@@ -38,7 +38,7 @@
       </ul>
       <ul class="navbar-nav abs-center-x">
         <li class="nav-item">
-          <a class="navbar-brand d-none d-lg-block" href="r3.html">Vestirte</a>      
+          <a class="navbar-brand d-none d-lg-block" href="r3.html"><img src="img/logo.png" width="auto" height="50"></a>      
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -59,7 +59,7 @@
               <h3>Ingresá a tu Espacio Vestirte</h3>
               <p class="d-none d-lg-block">Si sos Revendedora Independiente, ingresá tu número de cuenta y contraseña. Si aún no sos Revendedora Independiente, hacé click acá para postularte.</p>
               <br class="d-none d-lg-block">
-              <p class="d-none d-lg-block">Si sos Revendedora Independiente y no te registraste, hacé click acá para hacerlo.</p>
+              <p class="d-none d-lg-block">Si sos Revendedora Independiente y no te registraste, <a href="convertite_en_revendedora.html">hacé click acá</a> para hacerlo.</p>
               <input type="text" placeholder="Numero de cuenta" name="uname" required>
               <br>
                 <input type="password" placeholder="Contraseña" name="psw" required>
@@ -77,7 +77,7 @@
             <div class="row">
               <hr>
               <p class="d-none d-lg-block">Si estás dentro de las zonas habilitadas y sos Revendedora Independiente ON, iniciá sesión con tu usuario de Facebook</p>
-              <button>Ingresar con facebook</button>
+              <button id="btn_facebook">Ingresar con facebook</button>
               <hr class="d-none d-lg-block">
               <p class="d-none d-lg-block">Si querés ser Revendedora Independiente Vestirte, hacé click <a href="#">acá</a>.</p>
             </div>
@@ -94,15 +94,15 @@
       <a class="nav-link" href="#" onclick="document.getElementById('id02').style.display='block'">Ingreso cliente</a>
 
       <!-- The Modal -->
-      <div id="id02" class="modal2">
+      <div id="id02" class="modal">
         <span onclick="document.getElementById('id02').style.display='none'" 
-      class="close" title="Close Modal">&times;</span>
+      class="close" title="Close Modal2">&times;</span>
 
         <!-- Modal Content -->
         <form class="modal-content2" action="/action_page.php">
           <div class="container">
             <h3>Ingreso Cliente</h3>
-            <p>¡Registrate <a href="#">acá</a>!</p>
+            <p>¡Registrate <a href="registrarte.html">acá</a>!</p>
             <hr>
             <input type="text" placeholder="Email" name="uname" required>
             <br>
@@ -118,8 +118,12 @@
             <button id="btn_facebook">Ingresar con facebook</button>
           </div>
         </form>
+        
       </div>
 
+        </li>
+         <li>
+          <a href="#"><img src="img/carro.png" width="35" height="35" class="d-none d-sm-block"></a>
         </li>
       </ul>
     </div>
@@ -127,16 +131,17 @@
 
 
   <!-- Menu -->
-<div class="d-none d-lg-block">
+
+
+ <div class="d-none d-lg-block">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       
       <!-- sidenav  start-->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="r3.html">Inicio</a>
+        <a href="categoria.html">Categoria</a>
+        <a href="terminos.html">Terminos</a>
       </div>
 
       <!-- Use any element to open the sidenav -->
@@ -144,7 +149,9 @@
 
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main">
-      </div>
+      </div> 
+
+
 
       <!-- sidenav end -->
 
@@ -158,9 +165,9 @@
             Categoría
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Maquillage</a>
-            <a class="dropdown-item" href="#">Fragancia</a>
-            <a class="dropdown-item" href="#">Shampoo</a>
+            <a class="dropdown-item" href="categoria.html">Mujeres</a>
+            <a class="dropdown-item" href="categoria_hombre.html">Hombres</a>
+            <a class="dropdown-item" href="categoria_kid.html">Kid</a>
           </div>
         </li>
       </ul>
@@ -168,9 +175,9 @@
         <li class="nav-item">
           <a class="nav-link" href="como_comprar.html">Como comprar</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="folletos.html">Folleto</a>
-        </li>
+        </li> -->
         <li class="nav-item">
            <a class="nav-link" href="usuario.html">Usuarios frecuentes</a>
         </li>
@@ -179,7 +186,26 @@
   </nav>
 </div>
 
+<div class="menu-pequeño d-block d-sm-none">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="categoria.html">Categoria</a>
+              <a class="dropdown-item" href="como_comprar.html">Como comprar</a>
+              <a class="dropdown-item" href="usuario.html">Usuario Frecuentes</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+  </div>
+
  <!-- </div> --> 
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
 <!-----------------------------------Usuario---------------------------------------------------------------------------------------------------------------------------------------------->
 	
@@ -195,102 +221,54 @@
 				<p>Comprá utilizando el código del producto que indica el folleto. Sólo tenés que introducir el código de 6 dígitos.</p>
 			</div>
 		</div>
-		<div class="row align-items-start">
-			<div class="col-4">
-				<p>Mi pedido</p>
-			</div>
-			<div class="col-4 d-none d-lg-block d-print-block">
-				
-			</div>
-			<div class="col-xs-4">
-				<button>Finalizar Compra</button>
-			</div>
-		</div>
+    <div class="row">
+      <div class="col-1 d-none d-sm-block">Mi pedido</div>
+      <div class="col-2 d-none d-sm-block pedido"><label>0</label></div>
+      <div class="col-5 d-none d-sm-block"></div>
+      <div class="col-2 d-none d-sm-block"><label>$0,00</label></div>
+      <div class="col-2 d-none d-sm-block"><button>Finalizar Compra</button></div>
+
+      <div class="col-12 d-block d-sm-none">Mi pedido</div>
+      <div class="col-12 d-block d-sm-none"><label>0</label></div>
+      <div class="col-12 d-block d-sm-none"><label>$0,00</label></div>
+      <div class="col-12 d-block d-sm-none"><button>Finalizar Compra</button></div>
+
+    </div>
 	</div>
 
 	  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-
- <!-- Form -->
-  <div class="container-full">
-    <div class="row1">
-      <div class="col-xs-12">
-        <p>Vestirte</p>
-        <div class="row2">
-          <div class="col-xs-12 d-none d-lg-block d-print-block">
-            <h3>¡No te pierdas ninguna novedad!</h3>
-          </div>
-          <div class="col-xs-12">
-            <p id="registrate">Registrate al newsletter de Vestirte para recibir ofertas exclusivas y tips sobre las últimas tendencias.</p>
-          </div>
-        
-
-        <div class="row3">
-          <form class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Suscribirte</button>
-          </form>
-        </div>
-
-        <div class="row4">
-          <div class="col-xs-12">
-            <p id="parrafo">El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley N° 25.326. La AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.</p>
-          </div>
-         </div>
-
-         <div class="row5">
-          <div class="col-auto">
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-            <input type="checkbox" class="custom-control-input" id="customControlInline">
-            <label class="custom-control-label" for="customControlInline">He leído y acepto la Declaración de privacidad y los Términos y Condiciones de uso del sitio</label>
-            </div>
-          </div>
-         </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-
-  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
   
-  <div class="menu2 d-none d-lg-block d-print-block">
-    <div class="text-center3">
-      <div class="row">
-        <div class="col-xs-3">
-          <ul>
-            <li>Acerca de</li>
-            <li><a href="">Fundacion</a></li>
-            <li><a href="">Empleos</a></li> 
-          </ul>
-        </div>
-        <div class="col-xs-3">
-          <ul>
-            <li>Como comprar</li>
-            <li><a href="">Zonas hablitiadas</a></li>
-            <li><a href="">Ayuda</a></li> 
-          </ul>
-        </div>
-        <div class="col-xs-3">
-          <ul>
-            <li>Terminos de privacidad</li>
-            <li><a href="">Declaracion</a></li>
-            <li><a href="">Bases</a></li> 
-          </ul>
-        </div>
-        <div class="col-xs-3">
-          <ul class="button2">
-            <li><button type="button" class="btn btn-primary btn-lg" style="width: 400px">Solicita Revendedora</button></li>
-            <li><button type="button" class="btn btn-secondary btn-lg" style="width: 400px">Convertite en Revendedora</button></li>
-          </ul>
-        </div>
-      </div>
+<div class="listado d-none d-lg-block d-print-block">
+  <div class="row">
+    <div class="col-md-3">
+      <ul>
+        <li>Acerca de</li>
+        <li><a href="#">Fundacion</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li>Como comprar</li>
+        <li><a href="#">Zonas hablitiadas</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li>Terminos de privacidad</li>
+        <li><a href="#">Declaracion</a></li>
+        <li><a href="#">Bases</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <a href="solicita_revendedora.html"><button style="cursor: pointer;">Solicita Revendedora</button></a>
+        <a href="convertite_en_revendedora.html"><button style="cursor: pointer;">Convertite Revendedora</button></a>
+      </ul>
     </div>
   </div>
+</div>
 
   <div class="menu-pequeño d-lg-none">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -326,25 +304,18 @@
             </div>
           </li>
           <li>
-            <button type="button" class="btn btn-primary btn-xs" style="width: 100%">Solicita Revendedora</button>
-            <button type="button" class="btn btn-primary btn-xs" style="width: 100%">Convertite Revendedora</button>
+             <a href="solicita_revendedora.html"><button type="button" class="btn btn-primary btn-xs" style="width: 100%">Solicita Revendedora</button></a>
+            <a href="convertite_en_revendedora.html"><button type="button" class="btn btn-primary btn-xs" style="width: 100%">Convertite Revendedora</button></a>
           </li>
         </ul>
     </nav>
   </div>
 
-  <br>
-  <br>
-
   <!-- bottom -->
-  <hr>
   <div class="bottom">
       <p>2018 Vestirte</p>
       <br>
-      <a href="#">Declaración de privacidad | Términos y Condiciones de uso del sitio.</a>
+      <a href="terminos.html">Declaración de privacidad | Términos y Condiciones de uso del sitio.</a>
   </div>
-  <br>
-  <br>
-
 </body>
 </html>

@@ -1,0 +1,36 @@
+body{
+	margin: 0px;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+.registrarte .row{
+	border: 1px solid purple;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+/*Bottom*/
+.bottom {
+	text-align: center;
+  background-color: #E6E6E6;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.bottom a{
+	text-decoration: none;
+	color: grey;
+}
+
+
+@media (max-width: 1200px){
+	.registrarte .row{
+		border: 1px solid purple;
+		margin: auto;
+		width: 100%;
+		padding: 10px;
+	}
+}

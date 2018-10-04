@@ -10,37 +10,40 @@ body{
     transform: translateX(-50%);
 }
 
-.form {
-	color:white;
-}
-
-.context{
+/* List */
+.listado{
   margin: auto;
-  width: 60%;
+  width: 70%;
 }
 
-.context img{
-	width: 350px;
+.listado .row .col-md-3 ul li{
+  list-style: none;
 }
 
-.cartel {
-    width: 100%;
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-top: 100px;
-    text-align: center;
-    background-color: #F2F2F2;
+.listado button{
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #8904B1;
+  color: white;
 }
 
-.cartelchild2 {
-    display: inline-block;  
-    margin: 2px;
-    background-color: #D8D8D8;
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    margin-bottom: 150px;
+
+/*Bottom*/
+.bottom {
+  text-align: center;
+  background-color: #E6E6E6;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
+
+.bottom a{
+  text-decoration: none;
+  color: grey;
+}
+
 
 .container1{
 	margin: auto;

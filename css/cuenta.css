@@ -1,0 +1,132 @@
+body{
+	margin: 0px;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+.cuenta{
+	margin: auto;
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+
+#Revendedora button{
+	padding: 10px;
+	background-color: purple;
+	border: none;
+	color: white;
+	width: 50%;
+	margin: auto;
+	cursor: pointer;
+}
+
+#Pedidos button{
+	padding: 10px;
+	background-color: purple;
+	border: none;
+	color: white;
+	width: 50%;
+	margin: auto;
+	cursor: pointer;
+}
+
+#Informacion button{
+	padding: 10px;
+	background-color: purple;
+	border: none;
+	color: white;
+	width: 50%;
+	margin: auto;
+	cursor: pointer;
+}
+
+#Direccion button{
+	padding: 10px;
+	background-color: purple;
+	border: none;
+	color: white;
+	width: 50%;
+	margin: auto;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Revendedora {
+	border:1px solid purple;
+}
+
+#Pedidos {
+	border:1px solid purple;
+}
+
+#Informacion {
+	border:1px solid purple;
+}
+
+#Direccion {
+	border:1px solid purple;	
+}
+/*-----------------------------------------------------------------------------------------*/
+
+@media (max-width: 1200px){
+	.cuenta-xs .row .col-12{	
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.cuenta-xs .row .col-12 p{
+		text-align: center; 
+		font-size: 10px; 
+		padding: 10px;
+	}
+
+	.cuenta-xs .row .col-12 span{
+		text-align: center; 
+		font-size: 12px; 
+		padding: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.cuenta-xs .row .col-12 button{
+		padding: 5px;
+		border: none;
+		background-color: purple;
+		width: 90%;
+		color: white;
+	}
+}

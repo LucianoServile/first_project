@@ -1,0 +1,19 @@
+body{
+	margin: 0px;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+.editar{
+	margin: auto;
+	width: 50%;
+	border: 1px solid purple;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1200px){
+	.editar{
+		width: 100%;
+	}
+}

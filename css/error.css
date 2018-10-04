@@ -1,0 +1,26 @@
+body{
+	margin: 0px;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+/*Bottom*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+.bottom {
+	text-align: center;
+  background-color: #E6E6E6;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.bottom a{
+	text-decoration: none;
+	color: grey;
+}
